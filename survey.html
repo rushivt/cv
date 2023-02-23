@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2>Fill up the details</h2><hr>
+    <form action="thankyou.html" name="survey" method="post"><br>
+        <label>First name: </label><input type="text" name="first_name" value=""><br>
+        <label>Last name: </label><input type="text" name="last_name" value=""><br>
+        <label>Date of Birth: </label><input type="date" name="dob" id="dob"><br>
+        <fieldset>
+            <label>Status: </label><input type="radio" name="status" id="resident" value="Resident" checked>
+            <label for="resident">
+                Resident
+            </label>
+            <input type="radio" name="status" id="foreign" value="Foreign National">
+            <label for="foreign">
+                Foreign
+            </label>
+        </fieldset>
+        <br>
+        <label>Pick your highest Education: </label><input type="checkbox" name="highschool">
+        High School<input type="checkbox" name="undergraduate">Undergraduate<br>
+        <label>Enter your email id: </label><input type="email" name="email" id=""><br>
+        <input type="button" value="Disabled" disabled><br>
+        <br><input type="reset" value="Reset"><input type="submit" value="Submit">
+    </form>
+</body>
+</html>
